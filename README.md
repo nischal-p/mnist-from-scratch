@@ -6,5 +6,9 @@ Hands-on neural-network and PyTorch learning, headed toward transformers.
 - [Roadmap](learning/ROADMAP.md) — what is covered and next.
 - [Quick references](learning/reference/) — concise refreshers.
 
-Learning code: `mnist-from-scratch.ipynb`, `main.py`,
-`mnist-using-pytorch.ipynb`, and `pytorch_hands_on_playground.ipynb`.
+Learning code:
+
+- `notebooks/01-mnist-from-scratch.ipynb` — MNIST and NumPy foundations.
+- `notebooks/02-pytorch-playground.ipynb` — tensor and training experiments.
+- `notebooks/03-mnist-using-pytorch.ipynb` — a PyTorch MNIST MLP.
+- `examples/manual-backprop.py` — one manual forward/backpropagation update.

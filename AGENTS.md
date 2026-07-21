@@ -9,7 +9,7 @@ engineer who is newer to ML and its mathematical vocabulary.
 1. `learning/CURRENT_STATE.md` — immediate handoff and next action.
 2. `learning/LEARNER_MODEL.md` — durable background, strengths, and gaps.
 3. `learning/ROADMAP.md` — the larger sequence.
-4. The relevant notebook or source file.
+4. The relevant file in `notebooks/` or `examples/`.
 
 ## Teach this way
 

@@ -4,9 +4,9 @@ Last substantial update: **2026-07-21**
 
 ## Where we are
 
-The active learning artifact is `pytorch_hands_on_playground.ipynb`. Current
-focus: tensor fluency—especially image batch shapes, plotting, reshape behavior,
-broadcasting, reductions, and matrix multiplication.
+The active learning artifact is `notebooks/02-pytorch-playground.ipynb`.
+Current focus: tensor fluency—especially image batch shapes, plotting, reshape
+behavior, broadcasting, reductions, and matrix multiplication.
 
 Recent confirmed understanding:
 
@@ -30,8 +30,9 @@ Continue the playground's **Indexing, reshaping, and views** section.
 
 ## Known code notes (do not fix automatically)
 
-- `mnist-using-pytorch.ipynb` has a stray `s` after an `imshow(...)` call in
-  the image-display cell; it will cause a syntax error when that cell runs.
+- `notebooks/03-mnist-using-pytorch.ipynb` has a stray `s` after an
+  `imshow(...)` call in the image-display cell; it will cause a syntax error
+  when that cell runs.
 - The current playground notebook has user changes in progress. Preserve them
   unless a session specifically asks to modify it.
 

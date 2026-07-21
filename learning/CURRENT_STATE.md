@@ -16,17 +16,25 @@ Recent confirmed understanding:
   grid.
 - `image_batch[i].squeeze()` changes a single image from `(1, 28, 28)` to
   `(28, 28)` for grayscale display.
+- Broadcasting can reuse a `(3,)` offset across each row of a `(2, 3)` tensor.
+- `mean(dim=1)` produces one value per row, shape `(2,)`; `keepdim=True`
+  instead yields `(2, 1)`, so it can broadcast back across the columns.
+- Dense-layer matrix multiplication follows `(batch, input_features) @
+  (input_features, output_features) -> (batch, output_features)`.
 
 ## Best next session
 
-Continue the playground's **Indexing, reshaping, and views** section.
+Run the reorganized early tensor-fluency path in
+`notebooks/02-pytorch-playground.ipynb`: tensor facts → image axes → indexing
+and reshaping → combining and summarizing tensors. Predict the printed shapes
+before running each section.
 
-1. Predict the result of each `flatten(start_dim=...)` call before running it.
-2. Fix the exercise by assigning `my_var = my_var.reshape(3, 8)`, then explain
-   why `(3, 7)` cannot contain the 24 elements.
-3. Complete the row-wise squared-length exercise and state its input/output
-   shapes.
-4. Proceed to autograd only after these shape operations feel predictable.
+1. Complete the row-wise squared-length exercise and state its input/output
+   shapes: `(2, 2) -> (2,)`.
+2. Continue the playground's **Indexing, reshaping, and views** section:
+   predict each `flatten(start_dim=...)` result and assign
+   `my_var = my_var.reshape(3, 8)`.
+3. Proceed to autograd only after these shape operations feel predictable.
 
 ## Known code notes (do not fix automatically)
 
@@ -35,6 +43,8 @@ Continue the playground's **Indexing, reshaping, and views** section.
   when that cell runs.
 - The current playground notebook has user changes in progress. Preserve them
   unless a session specifically asks to modify it.
+- The revised broadcasting section has static JSON validation, but was not
+  executed here because the `jupyter` command is not installed in this workspace.
 
 ## Update rule
 

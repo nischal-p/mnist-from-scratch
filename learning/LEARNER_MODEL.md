@@ -1,9 +1,10 @@
 # Learner profile
 
-This is a practical snapshot, not a scorecard. It describes durable background,
-teaching preferences, and conceptual status. Use `CURRENT_STATE.md` for the
-next-session handoff. Update this profile when a misconception is resolved, a
-new skill is demonstrated, or a recurring confusion emerges.
+This is a durable teaching profile, not a session log or scorecard. It records
+background, established knowledge, recurring conceptual edges, and teaching
+preferences. Use `CURRENT_STATE.md` for the active notebook, recent progress,
+and next-session handoff. Update this profile only when a durable change is
+demonstrated or a recurring confusion emerges.
 
 ## Background
 
@@ -15,7 +16,7 @@ new skill is demonstrated, or a recurring confusion emerges.
 Teach at an experienced-engineer level: do not re-teach basic programming, but
 do define ML and mathematical terms instead of assuming they are familiar.
 
-## Current strengths
+## Established knowledge
 
 - Connects an MNIST image to pixels, a flattened input vector, weights, an
   activation function, outputs, labels, and loss.
@@ -35,18 +36,13 @@ do define ML and mathematical terms instead of assuming they are familiar.
 - Is actively asking about code semantics rather than treating examples as
   recipes to copy.
 
-## Work in progress
+## Recurring conceptual edges
 
-- Make reshape behavior concrete: calling `reshape` returns a tensor; it does
-  not change a variable unless the result is assigned (or an in-place API is
-  used).
-- Build reliable intuition for which tensor dimensions are batch, channel,
-  feature, token, and class dimensions.
-- Move from manual gradients to PyTorch autograd without losing the link to the
-  underlying chain rule.
-- Practice writing and modifying a complete training loop from memory.
-- Develop a firm model of logits, cross-entropy, numerical stability, and why
-  classification usually uses cross-entropy rather than MSE.
+- Matrix orientations and transposes benefit from repeated shape tracing.
+- New ML and mathematical vocabulary is most useful when attached to the
+  relevant code and tensor shapes.
+- Framework abstractions should remain connected to the manual forward-pass,
+  loss, and gradient story.
 
 ## Teaching preferences inferred so far
 
